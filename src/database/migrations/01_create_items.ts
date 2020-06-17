@@ -5,8 +5,6 @@ export async function up(knex: Knex) {
     table.increments("id").primary();
     table.string("image").notNullable();
     table.string("title").notNullable();
-
-    table.integer("point_id").notNullable().references("id").inTable("points");
   });
 }
 

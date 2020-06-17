@@ -14,6 +14,8 @@ export async function up(knex: Knex) {
     table.string("uf").notNullable();
 
     table.integer("user_id").notNullable().references("id").inTable("users");
+
+    table.integer("item_id").notNullable().references("id").inTable("items");
   });
 }
 
