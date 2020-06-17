@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev src/sever.ts",
-    "knex-migrations" : "knex migrate:latest --knexfile knexfile.ts migrate:latest"
+    "knex-migrations": "knex migrate:latest --knexfile knexfile.ts migrate:latest"
   },
   "keywords": [],
   "author": "elcoss",
